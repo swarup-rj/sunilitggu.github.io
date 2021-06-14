@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Swarup Ranjan Behera</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+	</head>
+
+	<!-- <body> -->
+	<!-- change again this line to make GitHub Pages refresh the whole website -->
+	<body style="background-color:rgb(245, 245, 245);">
+
+		<div class = "container">
+			<div class="row">
+				<h1 class = "text-center">Swarup Ranjan Behera</h1>
+				<p class = "text-center">Research Scholar<br>
+				Indian Institute of Technology Guwahati<br>				
+				Guwahati, Assam, India<br>
+				Email: b.swarup@iitg.ac.in<br/>
+				</p>
+				<div class="col-xs-8 col-xs-offset-2">
+				<a href="https://www.researchgate.net/profile/Swarup-Behera-3" target="_blank" class="pull-right btn btn-default btn-md"><i class="ai ai-researchgate-square ai-1x"></i></a>
+				<a href="https://twitter.com/swaruprj" target="_blank" class="pull-right btn btn-default btn-md"><i class="fa fa-twitter icon-color"></i></a>
+				<a href="https://github.com/swarup221b" target="_blank" class="pull-right btn btn-default btn-md"><i class="fa fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/swarup-ranjan-behera-2076671b7/" target="_blank" class="pull-right btn btn-default btn-md"><i class="fa fa-linkedin"></i></a>		
+				<a href="https://scholar.google.com/citations?pli=1&authuser=1&user=ruPkOMoAAAAJ" target="_blank" class="pull-right btn btn-default btn-md"><i class="fa fa-google"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class = "navbar navbar-default navbar-static-top">
+			<div class = "container">
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "pub.html">Publication</a></li>
+						<li><a href = "cv.html">CV</a></li>
+						<li  class = "active"><a href = "research.html">Research</a></li>
+						<li><a href = "teaching.html">Teaching</a></li>
+						<li><a href = "software.html">Software</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+					
+		<!-- main content goes here -->
+		<!-- everythin after the menu bar -->
+		<div class = "container" id="mainContent">
+
+			<div class="text-center">					
+					<a class="btn btn-primary" href="#journals">Current Work</a>
+					<a class="btn btn-primary" href="#journals1">Future Work 1</a>
+					<a class="btn btn-primary" href="#journals2">Future Work 2</a>
+					<a class="btn btn-primary" href="#journals3">Future Work 3</a>
+<!-- 					<a class="btn btn-primary" href="#books">Book Chapters</a> 
+					<a class="btn btn-primary" href="#reports">Technical Reports</a> -->
+				</div>						
+
+
+			<h4 id="journals"><u>Current (Ph.D.) Research Work: Learning Player-specific Strategies Using Cricket Text Commentary</u></h4>  
+			<ul>
+				<li> <div> <b>Motivation</b>: In today's world, as sports are getting more competitive than ever, players and teams are looking for ways to get an edge over their rivals. The progressive trend of analyzing vast amounts of data has also emerged in cricket, as it brings a significant advantage against other teams in the championship. A huge amount of data in the form of scorecards, audio commentary, video broadcasts, and tracking data are generated in every match. To build player-specific strategies, various graphical representations and statistical summaries are obtained from these data. The graphs and statistics summarize player's - batting overview (wagon wheel, ground map, batting average, and strike rate), bowling overview (pitch map, bowling economy, and bowling average), and fielding overview (field position map). While interesting, the focus of these analyses has primarily been at an aggregate level. They capture the game's play on a macroscopic level and do not attend to the minute details. For example, the batting average and the strike rate look at a batsman's overall statistics, but not the finer details like how the batsman plays under different conditions. Experts, including team coach and team management, on the other hand, require the knowledge of minute details of the game to build player-specific strategies. <br><br>
+
+				Devising player-specific strategy in cricket needs a microscopic understanding of player's strengths and weaknesses. However, there is no specific computational method to obtain the strengths and weaknesses of cricket players. Our research primarily aims to build computational models for mining the strength rules and weakness rules of cricket players. The challenge of this research work lies in identifying a suitable dataset, defining the strength rule and weakness rule, identifying the learning algorithm, and validating the obtained rules. We address these challenges systematically and make the following research contributions. <br><br>
+
+				 </div>
+				
+				<li> <div> <b>Cricket Text Commentary</b>: 	We propose the use of unstructured data, namely cricket text commentary, for learning player's strengths and weaknesses. We have constructed a large-scale dataset consisting of more than one million cricket text commentaries spanning over thirteen years (May 2006 to April 2019). We have identified the challenges inherent to the cricket text commentary data and addressed those challenges. Finally, we have obtained fine-grained information about each player from the text commentary data and represented it using domain-specific features such as batting features, bowling features, and external features. The extracted batting features and bowling features from the text commentary data are represented as a technical confrontation matrix in which rows correspond to batting features and columns correspond to bowling features. Every element in this matrix corresponds to how the batsman confronted with the bowlers. For example, how many times batsman has attacked the short length deliveries? Similarly, the extracted bowling/batting features and external features from the text commentary data are represented as an external confrontation matrix in which rows correspond to bowling/batting features and columns correspond to the external features. Every element in this matrix corresponds to how the batsman or bowler performed on the external feature. For example, how many times batsman has faced good length deliveries on day1 of all the Test matches he has played? <br><br> </div>
+
+				<li> <div> <b>Strength and Weakness</b>: We proposed an approach to learn the strength rules and weakness rules of cricket players using the text commentary data. For a given player, the presented approach proceeds in three steps. In the first step, the approach introduces the computationally feasible definitions of strength rule and weakness rule. The second step employs a dimensionality reduction method, namely Correspondence Analysis, on the technical confrontation matrix to construct semantic relations between batting features and bowling features. In the third step, the approach plots these relations using biplots and extracts human readable strength rules and weakness rules. Unlike existing methods, the proposed approach goes beyond runs and balls. It considers all the actions performed by the batsman and bowler on each delivery. The obtained strength rules and weakness rules are validated using intrinsic and extrinsic methods. Several case studies show that the proposed approach can identify the strength rules and weakness rules of players in individual matches and throughout their careers. <br><br> </div>
+
+				<li> <div> <b>Temporal Analysis</b>: We proposed an approach to learn the temporal changes in cricket players' strength rules and weakness rules. For a given player, the presented approach proceeds in two steps. The first step uses the year-wise technical confrontation matrices to model the data as a three-dimensional confrontation tensor in which batting features, bowling features, and time (in years) are captured. The second step employs a dimensionality reduction method, namely Three Way Correspondence Analysis, to construct semantic relations between batting features, bowling features, and time. These relations are plotted in a line plot to visualize the year-wise changes in strength rules and weakness rules. Several case studies show that the proposed approach can identify the temporal changes in the player's strength rules and weakness rules. <br><br> </div>
+
+				<li> <div> <b>External Factor Analysis</b>: We proposed an approach to learn the strength rules and weakness rules of cricket players in the presence of external factors. These factors are outside the scope of the game and yet influence a player's strengths and weaknesses. For a given player, the presented approach proceeds in two steps. In the first step, the approach introduces the computationally feasible definitions of strength and weakness in the presence of external factors. The second step employs a dimensionality reduction method, namely Canonical Correspondence Analysis, on the technical confrontation matrix and external confrontation matrix to construct semantic relations between batting features, bowling features, and external features. These relations are plotted in a triplot to visualize the strength rules and weakness rules in the presence of external factors. Several case studies show that the proposed approach can identify the strength rules and weakness rules of batsmen and bowlers in the presence of external factors influencing the game. <br><br> </div>
+
+				<li> <div> <b>Similar Players</b>: We proposed an approach to find the players (batsmen or bowlers) having similar strength rules or similar weakness rules. The presented approach proceeds in two steps. In the first step, the approach obtains the strength vectors and weakness vectors of all the batsmen (or bowlers) from their strength rules and weakness rules. The second step employs the t-SNE algorithm to visualize these high-dimensional vectors in a two-dimensional plot in which batsmen (or bowlers) having similar strength rules or similar weakness rules are placed closer. Several case studies show that the proposed approach can identify similar batsmen and similar bowlers based on their strength rules and weakness rules. <br><br> </div>
+
+				<li> <div> <b>Association Rules</b>: We proposed an approach to learn the association of strengths or weaknesses exhibited by a batsman with the type of delivery he or she has faced. In essence, the bowling features that may be associated with the batsman's strengths or weaknesses are investigated. Each delivery is represented as a set of bowling and batting features, similar to the set of items representing a transaction in association rule mining. Apriori algorithm of association rule mining is used to obtain the strength association rules and weakness association rules. <br><br> </div>
+
+			</ul>
+
+			<a href="#top">Go to Top</a>
+
+
+			<h4 id="journals1"><u>Future Work 1: Machine Learning in Sports Analytics</u></h4>  
+			<ul>
+				<li> <div> <b>Introducing multiview learning into reinforcement learning framework for modeling the short text commentary</b>: Reinforcement learning is a machine learning paradigm where the machines learn to complete specific tasks by taking a sequence of actions that leads them through the intermediate states to the goal state. The process of finding this sequence is guided by reinforcement, which is in the form of a reward received at the completion of a task. Q-learning is one of the algorithms that uses reinforcement learning to train the agent. It does not require any knowledge of the environment for the training. Hence, we think it might be suitable in the context of Cricket. As every delivery has two perspectives or views (batsman’s view and bowler’s view), we would like to introduce multiview learning to the Q-learning. <br><br> </div>
+				
+				<li> <div> <b>Exploit the dual nature of the short text commentary (batting and bowling) for dual topic modeling</b>: 	The Latent Dirichlet Allocation (LDA) topic model assumes every document is a mixture of topics and every topic is a Dirichlet distribution over words in the vocabulary. It has been applied to analyze documents having only one type of information, like words. LDA-dual extends LDA to be applied on documents containing two types of information (words and author names). To achieve this, it adds the third assumption - every topic is a Dirichlet distribution over all author names. Given the dual nature of information (batting and bowling) in each short text commentary, we think it might be suitable for dual topic modeling. <br><br> </div>
+
+				<li> <div> <b>Temporal LDA-dual:</b>: An extension of the LDA-dual model to capture the time-varying trends in topics for each player. The temporal LDA-dual model will capture the low dimen- sional structure of the data and the change in the structure over time. <br><br> </div>
+
+				<li> <div> <b>Cric2Vec</b>: Objective is to apply neural models (word2vec and doc2vec) on short text com- mentary data to derive insights about cricket players and teams. <br><br> </div>
+
+			</ul> 
+
+			<a href="#top">Go to Top</a>
+
+			<h4 id="journals2"><u>Future Work 2: Fake News Detection</u></h4>  
+			<ul>
+				<div> Fake news is a growing epidemic in our society right now. Fake news is any news that either misrepresents the facts or is factually wrong. It can be spread through traditional news mediums or social media platforms like Facebook, Twitter, WhatsApp, etc.  Social media has become a primary means for fake news spreading, which led to many political, economic, social, and criminal consequences. Fake News Detection (FND) research has recently received a lot of attention to mitigate this problem. FND has been well explored for resource-rich languages like English but is unexplored for resource-constrained Indic languages like Hindi and Bengali, which are widely spoken by more than a billion speakers. Now a days, social media has seen a significant rise in regional language posts, e.g., the percentage of non-English tweets in India have risen to 50%. This forms our motivation to extend FND to Indic languages as well (with a focus on Hindi). <br><br> </div>
+
+			</ul> 
+
+			<a href="#top">Go to Top</a>
+
+
+
+			<h4 id="journals3"><u>Future Work 3: Preventing Farmer Suicides by Predicting Crop Price Trends</u></h4>  
+			<ul>
+				<div> Farmer suicides have become a pressing social problem that governments around the world are striving to solve. In the last two decades, agrarian distress and other related socio-economic problems such as indebtedness and loss of agricultural income have led to a significant increase in suicide rates among small-scale farmers, especially in developing countries such as India, Pakistan, and Sri Lanka. Around 300,000 Indian farmers have committed suicide since 1995. As of 2014, 60,000 farmers have committed suicide in the Indian state of Maharashtra alone, with an average of 10 suicides every day. Thus, immediate steps need to be taken to alleviate this issue. <br><br>
+
+				Recent advances in machine learning techniques have made it possible to apply learning algorithms to market price trend prediction problem. Even though previous studies have attempted to tackle market price trend prediction via machine learning algorithms, they do not model the spatio-temporal dependence of future prices on past data explicitly. Hence, they do not have a desirable performance on the spatio-temporal datasets. Recently, deep learning methods for market price prediction based on the spatio-temporal dataset are proposed. However, they have not considered many influencing factors such as weather conditions and crop demands. <br><br>
+
+				This research aims to address the following research question: Can we build an accurate predictive model to foresee the future crop price trends in different markets based on the historical patterns of crop price, crop volume, geolocation information, weather conditions, and crop demands?
+
+				</div>
+
+			</ul> 
+
+			<a href="#top">Go to Top</a>
+
+
+			</div>
+ 
+ 
+     
+		<!-- script section -->
+		<!-- bootstrap and jquery scripts go here -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+
+		</body>
+</html>
